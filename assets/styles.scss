@@ -1,0 +1,53 @@
+@media screen {
+    body {
+        background-color: rgb(169, 151, 180);
+    }
+
+    .card {
+        max-width: 400px;
+        margin-left: 33%;
+        background-color: rgb(186, 191, 192);
+
+        .pic{
+            img{
+                height: 300px;
+                max-width: 400px;
+            }
+        }
+
+        .étiquette{
+            background-color: blueviolet;
+            text-align: center;
+            width: 100px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            transform: translateY(-35px);
+        }
+
+        .content {
+            max-width: 400px;
+            h1{
+                margin-left: 20px;
+            }
+            h2{
+                margin-left: 20px;
+            }
+            .txt{
+                display: none;
+            }
+        }
+    }
+    &:hover{
+        position: relative;
+        overflow: hidden;
+        .content{
+            transform: translateY(-150px);
+            transition: all 500ms ease-in-out;
+            .txt{
+                display: contents;
+                text-align: center;
+                margin-left: 25px;
+            }
+        }
+    }
+}
